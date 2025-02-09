@@ -24,6 +24,6 @@ After completion of the installation, run "yarn start" to start the app, the app
 
 ### Hosting
 
-The codebase is on github on https://github.com/
+The codebase is on github on https://github.com/Ayodeji10/task-manager/
 
-And the app is hosted on firebase at https://firebase.com/️
+And the app is hosted on firebase at https://task-manager-66f38.web.app/️
