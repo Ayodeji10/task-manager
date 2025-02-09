@@ -100,34 +100,50 @@ export default function TaskFilter() {
   return (
     <div className="filter">
       <p>Filter Tasks:</p>
-      <input
-        type="text"
-        placeholder="Search tasks"
-        value={searchValue}
-        onChange={(e) => setSearchValue(e.target.value)}
-      />
-      <select
-        value={selectedPriority}
-        onChange={(e) => setSelectedPriority(e.target.value)}
-        className="border p-2 rounded w-full"
-      >
-        <option value="">All Priorities</option>
-        <option value="low">Low</option>
-        <option value="medium">Medium</option>
-        <option value="high">High</option>
-      </select>
-      <input
-        type="date"
-        value={startDate}
-        onChange={handleStartDateChange}
-        className="border p-2 rounded w-full"
-      />
-      <input
-        type="date"
-        value={endDate}
-        onChange={handleEndDateChange}
-        className="border p-2 rounded w-full"
-      />
+      <div>
+        <label htmlFor="search">Search tasks</label>
+        <input
+          type="text"
+          id="search"
+          placeholder="Search tasks"
+          value={searchValue}
+          onChange={(e) => setSearchValue(e.target.value)}
+        />
+      </div>
+      <div>
+        <label htmlFor="priority">Select Priority</label>
+        <select
+          id="priority"
+          value={selectedPriority}
+          onChange={(e) => setSelectedPriority(e.target.value)}
+          className="border p-2 rounded w-full"
+        >
+          <option value="">All Priorities</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      <div>
+        <label htmlFor="start-date">Select Start Date</label>
+        <input
+          id="start-date"
+          type="date"
+          value={startDate}
+          onChange={handleStartDateChange}
+          className="border p-2 rounded w-full"
+        />
+      </div>
+      <div>
+        <label htmlFor="end-date">Select End Date</label>
+        <input
+          id="end-date"
+          type="date"
+          value={endDate}
+          onChange={handleEndDateChange}
+          className="border p-2 rounded w-full"
+        />
+      </div>
       <button
         onClick={resetFilters}
         className="border p-2 rounded bg-gray-200 hover:bg-gray-300"

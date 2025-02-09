@@ -30,6 +30,13 @@
   font-weight: 700;
 }
 
+.filter label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
 .filter input {
   border: solid 1px #b2beb5;
   padding: 6px 15px;
@@ -93,6 +100,7 @@
   border: solid 3px #efefef;
   border-radius: 10px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .task-list .task .task-bar {
@@ -141,6 +149,10 @@ table td.medium {
 .task-list .task .task-body p.high,
 table td.high {
   color: red;
+}
+
+table tbody tr {
+  cursor: pointer;
 }
 
 .add-task-btn {
